@@ -1,1 +1,5 @@
+#ifndef UNTITLED12_PRIMALIBRERIA_H
+#define UNTITLED12_PRIMALIBRERIA_H
+
+#endif //UNTITLED12_PRIMALIBRERIA_H
 int numeroprimo(int,int);
