@@ -1,13 +1,25 @@
 #include "primaLibreria.h"
 #include "iostream"
 using namespace std;
-int numeroprimo ( int a, int b){
-    int risultato = a/b;
-        if ( risultato == 1){
-            cout << " vero" << endl;
-    } else {
-            cout << " falso " << endl;
-        }
+bool numeroprimo ( int a){
 
-    return 0;
+    bool segnalibro= false;
+    int i = 2;
+    if (a != 2){
+        for (; i<a; i++){
+            if (a%i == 0){
+                break;
+            }
+        }
+    } else  {
+        segnalibro = true;
+    }
+    if (i==a) {
+        segnalibro = true;
+    }
+    return segnalibro;
+
+
+}
+
 
